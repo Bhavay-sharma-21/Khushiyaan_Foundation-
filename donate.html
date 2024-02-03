@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer and Payment Form</title>
+    <style>
+        body {
+            /* background-image: url("notebook-5356695_1280.jpg"); */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Join the Ocean Awareness Movement: Volunteer and Support</h2>
+
+    <form action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="payment">Payment Option:</label>
+        <select id="payment" name="payment" required>
+            <option value="" disabled selected>Select a payment option</option>
+            <option value="credit_card">Credit Card</option>
+            <option value="paytm">Paytm</option>
+            <option value="bank_transfer">Bank Transfer</option>
+        </select>
+
+        <!-- <button type="submit">Submit</button> -->
+        <a class="dn" href="donateNow.html">donate now</a>
+    </form>
+</body>
+</html>
